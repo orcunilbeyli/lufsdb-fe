@@ -1,0 +1,39 @@
+.search {
+  width: 960px;
+  margin: auto;
+  margin-top: 72px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+}
+.search button {
+  font-size: 16px;
+  font-family: "Press Start K";
+  padding: 0 24px;
+  height: 68px;
+  color: #FFFFFF;
+  background: #000000;
+  text-shadow: 2px 2px 0px #DF0EDB;
+  border: 0;
+}
+.search button:hover {
+  background: #181818;
+  cursor: pointer;
+  outline: 5px solid #DF0EDB;
+}
+.search input {
+  font-size: 18px;
+  width: 550px;
+  padding: 24px;
+  color: #FFFFFF;
+  background: #000000;
+  border: 0;
+}
+.search input:focus {
+  border: none;
+  outline: 5px solid #DF0EDB;
+}
+
+/*# sourceMappingURL=home-search.css.map */

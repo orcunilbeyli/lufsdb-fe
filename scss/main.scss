@@ -1,0 +1,19 @@
+html  {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(180deg, #000000 0%, #B400B0 100%) no-repeat;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    flex-direction: column;
+}
+
+
+
+@import 'animations' ,'header' ,'background' , 'recents' , 'home-search';

@@ -1,0 +1,40 @@
+header {
+    width: 100%;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        display: block;
+        width: 500px;
+    }
+    ul.navigation  {
+        margin-top: 64px;
+        color: #FFFFFF;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 780px;
+        
+        li {
+            display: inline-block;
+            font-family: 'Press Start K';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            transform: rotate(-5deg);
+            text-shadow:  2px 2px 0px #DF0EDB;
+            &:hover {
+                animation-name: crazy-link;
+                cursor: pointer;
+                transform: rotate(-6deg) scale(1.2);
+                animation-duration: .5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                
+            }
+        }
+    }
+}

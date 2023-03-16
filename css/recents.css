@@ -1,0 +1,57 @@
+.recents {
+  width: 960px;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  overflow-y: scroll;
+  margin-top: 72px;
+  background: black;
+  padding: 32px 32px;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.recents .table-head {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  color: #333333;
+}
+.recents .table-head .album {
+  width: 416px;
+  display: inline-block;
+}
+.recents .table-head .artist {
+  width: 300;
+  display: inline-block;
+}
+.recents .table-head .avg-lufs {
+  width: 100px;
+  display: inline-block;
+}
+.recents .table-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.recents .table-content .table-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #838383;
+}
+.recents .table-content .table-row .album {
+  width: 416px;
+  display: inline-block;
+}
+.recents .table-content .table-row .artist {
+  width: 300;
+  display: inline-block;
+}
+.recents .table-content .table-row .avg-lufs {
+  width: 100px;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=recents.css.map */

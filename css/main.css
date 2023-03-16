@@ -1,0 +1,216 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, #000000 0%, #B400B0 100%) no-repeat;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  flex-direction: column;
+}
+
+@keyframes grid-animation {
+  0% {
+    background-position-y: 0%;
+  }
+  100% {
+    background-position-y: 100%;
+  }
+}
+@keyframes crazy-link {
+  0% {
+    text-shadow: 2px 2px 0px #DF0EDB;
+  }
+  50% {
+    text-shadow: -2px -2px 0px #23BDCB;
+  }
+  100% {
+    text-shadow: 2px 2px 0px #DF0EDB;
+  }
+}
+header {
+  width: 100%;
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  display: block;
+  width: 500px;
+}
+header ul.navigation {
+  margin-top: 64px;
+  color: #FFFFFF;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 780px;
+}
+header ul.navigation li {
+  display: inline-block;
+  font-family: "Press Start K";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  transform: rotate(-5deg);
+  text-shadow: 2px 2px 0px #DF0EDB;
+}
+header ul.navigation li:hover {
+  animation-name: crazy-link;
+  cursor: pointer;
+  transform: rotate(-6deg) scale(1.2);
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.background-mountains {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("/assets/images/mountains.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -250;
+  overflow: hidden;
+}
+
+.background-grid {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: -251;
+  top: 0;
+}
+.background-grid .grid-anim {
+  background-image: url("/assets/images/grid.png");
+  background-position: 50% 50%;
+  background-size: 60vh;
+  animation: grid-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: none;
+  transform: perspective(800px) rotateX(60deg) rotateY(0deg) rotateZ(0deg);
+  width: 100%;
+  height: 100vh;
+}
+
+.background-noise {
+  background-image: url("/assets/images/noise.gif");
+  background-size: contain;
+  background-repeat: repeat;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -250;
+  opacity: 0.04;
+}
+
+.recents {
+  width: 960px;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  overflow-y: scroll;
+  margin-top: 72px;
+  background: black;
+  padding: 32px 32px;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.recents .table-head {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  color: #333333;
+}
+.recents .table-head .album {
+  width: 416px;
+  display: inline-block;
+}
+.recents .table-head .artist {
+  width: 300;
+  display: inline-block;
+}
+.recents .table-head .avg-lufs {
+  width: 100px;
+  display: inline-block;
+}
+.recents .table-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.recents .table-content .table-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #838383;
+}
+.recents .table-content .table-row .album {
+  width: 416px;
+  display: inline-block;
+}
+.recents .table-content .table-row .artist {
+  width: 300;
+  display: inline-block;
+}
+.recents .table-content .table-row .avg-lufs {
+  width: 100px;
+  display: inline-block;
+}
+
+.search {
+  width: 960px;
+  margin: auto;
+  margin-top: 72px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+}
+.search button {
+  font-size: 16px;
+  font-family: "Press Start K";
+  padding: 0 24px;
+  height: 68px;
+  color: #FFFFFF;
+  background: #000000;
+  text-shadow: 2px 2px 0px #DF0EDB;
+  border: 0;
+}
+.search button:hover {
+  background: #181818;
+  cursor: pointer;
+  outline: 5px solid #DF0EDB;
+}
+.search input {
+  font-size: 18px;
+  width: 550px;
+  padding: 24px;
+  color: #FFFFFF;
+  background: #000000;
+  border: 0;
+}
+.search input:focus {
+  border: none;
+  outline: 5px solid #DF0EDB;
+}
+
+/*# sourceMappingURL=main.css.map */

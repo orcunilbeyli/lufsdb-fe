@@ -1,0 +1,21 @@
+@keyframes grid-animation {
+  0% {
+    background-position-y: 0%;
+  }
+  100% {
+    background-position-y: 100%;
+  }
+}
+@keyframes crazy-link {
+  0% {
+    text-shadow: 2px 2px 0px #DF0EDB;
+  }
+  50% {
+    text-shadow: -2px -2px 0px #23BDCB;
+  }
+  100% {
+    text-shadow: 2px 2px 0px #DF0EDB;
+  }
+}
+
+/*# sourceMappingURL=animations.css.map */
