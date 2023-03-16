@@ -259,7 +259,7 @@ header ul.navigation li:hover {
 
 @font-face {
   font-family: "Press Start K";
-  src: url("assets/fonts/PressStartK.woff2") format("woff2");
+  src: url("/assets/fonts/PressStartK.woff2") format("woff2");
   font-display: swap;
 }
 
