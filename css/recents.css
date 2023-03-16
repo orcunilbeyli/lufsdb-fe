@@ -1,10 +1,15 @@
+.recents-title {
+  display: block;
+  text-align: center;
+  font-family: "Press Start K";
+  color: #FFFFFF;
+  margin-top: 72px;
+}
+
 .recents {
-  width: 960px;
-  height: 250px;
-  position: absolute;
+  width: calc(100% - 64px);
   bottom: 0;
   overflow-y: scroll;
-  margin-top: 72px;
   background: black;
   padding: 32px 32px;
   font-size: 18px;
@@ -52,6 +57,14 @@
 .recents .table-content .table-row .avg-lufs {
   width: 100px;
   display: inline-block;
+}
+
+.recents-arrow {
+  position: absolute;
+  margin-left: -75px;
+  margin-top: 50px;
+  width: 10vw;
+  z-index: 9999;
 }
 
 /*# sourceMappingURL=recents.css.map */
